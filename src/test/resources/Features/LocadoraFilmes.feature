@@ -10,3 +10,11 @@ Quando eu alugar
 Então o preço do aluguel será R$ 3
 E a data de entrega será no dia seguinte
 E o estoque do filme será de 1 unidade.
+
+Cenário: não deve alugar um filme sem estoque
+Dado que filme tem o estoque  0 unidades
+Quando Alugar 
+Então não será possivel 
+E estoque do filme é 0 unidade
+
+	
