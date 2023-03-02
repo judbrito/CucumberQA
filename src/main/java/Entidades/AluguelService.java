@@ -1,16 +1,24 @@
 package Entidades;
 
-import java.util.Calendar;
+import static Utilidades.Utils.obterData;
+
+
 
 public class AluguelService {
-	public NotaAlguel alugar(Filmes filme) {
-		NotaAlguel nota = new NotaAlguel();
-		nota.setPreco(filme.getAluguel());		
-		Calendar cal = Calendar.getInstance();
-		cal.add(Calendar.DAY_OF_MONTH, 1);
-		nota.setEntrega(cal.getTime());
+	public NotaAluguel alugar(Filmes filme, String tipo) {
+		if (filme.getEstoque() == 0)
+			throw new RuntimeException("Filme sem estoque");
+		NotaAluguel nota = new NotaAluguel();
+		if("extendido".equals(tipo)) {
+			nota.setPreco(filme.getAluguel()*2);			
+			nota.setEntrega(obterData(3));
+		}else {
+			nota.setPreco(filme.getAluguel());
+			nota.setEntrega(obterData(1));
+
+		}
 		filme.setEstoque(filme.getEstoque() - 1);
-		
+
 		return nota;
 
 	}

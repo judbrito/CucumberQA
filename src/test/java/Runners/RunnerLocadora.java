@@ -6,15 +6,13 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberOptions.SnippetType;
 
-
-
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Features/LocadoraFilmes.feature", 
-glue = "Steps", 
-plugin = "pretty", 
+@CucumberOptions(features = "src/test/resources/Features/LocadoraFilmes.feature",
+glue = "Steps",
+plugin = { "pretty"},
 snippets = SnippetType.CAMELCASE,
-monochrome =false, 
-dryRun = false, 
+monochrome = false,
+dryRun = false,
 strict = false)
 public class RunnerLocadora {
 
