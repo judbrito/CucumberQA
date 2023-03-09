@@ -9,8 +9,8 @@ public class Filmes {
 
 	}
 
-	public void setAluguel(int int1) {
-		this.aluguel = int1;
+	public void setAluguel(int string) {
+		this.aluguel = string;
 
 	}
 
@@ -23,5 +23,7 @@ public class Filmes {
 
 		return estoque;
 	}
+
+
 
 }

@@ -7,10 +7,11 @@ public class NotaAluguel {
 	private int preco;
 	private Date dataEntrega;
 	private int quantidade;
+	private int pontos;
 
 	public int getQuantidade() {
-		
-		return this.quantidade; 
+
+		return this.quantidade;
 	}
 
 	public int getPreco() {
@@ -26,9 +27,19 @@ public class NotaAluguel {
 		return dataEntrega;
 	}
 
-	public void setEntrega(Date time) {
+	public void setDataEntrega(Date time) {
 		dataEntrega = time;
 
+	}
+
+	public int getPontos() {
+
+		return pontos;
+	}
+
+	public void setPontos(int pontos) {
+		this.pontos = pontos;
+		
 	}
 
 }

@@ -3,7 +3,7 @@ package Utilidades;
 import java.util.Calendar;
 import java.util.Date;
 
-public class Utils {
+public class UtilsNull {
 
 	public static Date obterData(int dias) {
 		Calendar cal = Calendar.getInstance();
