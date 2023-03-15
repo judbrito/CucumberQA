@@ -1,0 +1,184 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-15T18:40:13.545Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7954800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SiteBarriga.abrir()"
+            }
+          }
+        ],
+        "line": 9,
+        "name": "Deve inserir uma conta com sucesso",
+        "description": "",
+        "id": "cadastro-de-contas;deve-inserir-uma-conta-com-sucesso",
+        "after": [
+          {
+            "result": {
+              "duration": 232400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SiteBarriga.fechar()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenário",
+        "steps": [
+          {
+            "result": {
+              "duration": 2809803500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "que estou acessando a aplicação",
+            "match": {
+              "location": "SiteBarriga.queEstouAcessandoAAplicação()"
+            },
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 91718100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "informo o usuário \"algumacoisa@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"algumacoisa@gmail.com\"",
+                  "offset": 18
+                }
+              ],
+              "location": "SiteBarriga.informoOUsuário(String)"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 70213900,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "a senha \"123456789\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"123456789\"",
+                  "offset": 8
+                }
+              ],
+              "location": "SiteBarriga.aSenha(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 566239300,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "seleciono entrar",
+            "match": {
+              "location": "SiteBarriga.selecionoEntrar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 48432900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "visualizo a página inicial",
+            "match": {
+              "location": "SiteBarriga.visualizoAPáginaInicial()"
+            },
+            "keyword": "Então "
+          },
+          {
+            "result": {
+              "duration": 61067500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "seleciono Contas",
+            "match": {
+              "location": "SiteBarriga.selecionoContas()"
+            },
+            "keyword": "Quando "
+          },
+          {
+            "result": {
+              "duration": 252582300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "seleciono Adicionar",
+            "match": {
+              "location": "SiteBarriga.selecionoAdicionar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 73986200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "informo a conta \"Conta de Teste\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Conta de Teste\"",
+                  "offset": 16
+                }
+              ],
+              "location": "SiteBarriga.informoAConta(String)"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 356533600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "seleciono Salvar",
+            "match": {
+              "location": "SiteBarriga.selecionoSalvar()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 811010800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "a conta é inserida com sucesso",
+            "match": {
+              "location": "SiteBarriga.aContaÉInseridaComSucesso()"
+            },
+            "keyword": "Então "
+          }
+        ]
+      }
+    ],
+    "name": "Cadastro de contas",
+    "description": "Como um usuário \nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+    "id": "cadastro-de-contas",
+    "keyword": "Funcionalidade",
+    "uri": "file:src/test/resources/Features/SenhorBarriga.feature",
+    "tags": []
+  }
+]

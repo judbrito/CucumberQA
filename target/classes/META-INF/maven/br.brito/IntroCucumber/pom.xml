@@ -5,8 +5,16 @@
 	<groupId>br.brito</groupId>
 	<artifactId>IntroCucumber</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<properties></properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>3.11.0</version>
+		</dependency>
 		<dependency>
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
@@ -16,7 +24,6 @@
 			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
 			<version>4.8.0</version>
-		
 		</dependency>
 	</dependencies>
 </project>
