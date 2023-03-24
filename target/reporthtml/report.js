@@ -1,345 +1,87 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/SenhorBarriga.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/Features/logarSimples.feature");
 formatter.feature({
-  "name": "Cadastro de contas",
-  "description": "Como um usuário \nGostaria de cadastrar contas\nPara que eu possa distribuir meu dinheiro de uma forma mais organizada",
+  "name": "ação de Login",
+  "description": "",
   "keyword": "Funcionalidade"
 });
-formatter.background({
-  "name": "",
+formatter.scenario({
+  "name": "login bem-sucedido com credenciais válidas",
   "description": "",
-  "keyword": "Contexto"
-});
-formatter.before({
-  "status": "passed"
+  "keyword": "Cenário"
 });
 formatter.step({
-  "name": "que estou acessando a aplicação",
+  "name": "que o usuário navegue na pagina,",
   "keyword": "Dado "
 });
 formatter.match({
-  "location": "SiteBarriga.queEstouAcessandoAAplicação()"
+  "location": "Logando.queOUsuárioNavegueNaPagina()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "informo o usuário \"algumacoisa@gmail.com\"",
+  "name": "digite o login e senha",
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "SiteBarriga.informoOUsuário(String)"
+  "location": "Logando.digiteOLoginESenha()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "a senha \"123456789\"",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.aSenha(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seleciono entrar",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoEntrar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "visualizo a página inicial",
+  "name": "seguida, a mensagem exibida Login com sucesso",
   "keyword": "Então "
 });
 formatter.match({
-  "location": "SiteBarriga.visualizoAPáginaInicial()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seleciono Contas",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoContas()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seleciono Adicionar",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoAdicionar()"
+  "location": "Logando.seguidaAMensagemExibidaLoginComSucesso()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Deve inserir uma conta com sucesso",
+  "name": "Logout bem-sucedido",
   "description": "",
   "keyword": "Cenário"
 });
 formatter.step({
-  "name": "informo a conta \"Conta de Teste\"",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.informoAConta(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seleciono Salvar",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoSalvar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "a conta é inserida com sucesso",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "SiteBarriga.aContaÉInseridaComSucesso()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Contexto"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "que estou acessando a aplicação",
+  "name": "que o usuário navegue na pagina,",
   "keyword": "Dado "
 });
 formatter.match({
-  "location": "SiteBarriga.queEstouAcessandoAAplicação()"
+  "location": "Logando.queOUsuárioNavegueNaPagina()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "informo o usuário \"algumacoisa@gmail.com\"",
+  "name": "digite o login e senha",
   "keyword": "Quando "
 });
 formatter.match({
-  "location": "SiteBarriga.informoOUsuário(String)"
+  "location": "Logando.digiteOLoginESenha()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "a senha \"123456789\"",
+  "name": "clicar em sair",
   "keyword": "E "
 });
 formatter.match({
-  "location": "SiteBarriga.aSenha(String)"
+  "location": "Logando.clicarEmSair()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "seleciono entrar",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoEntrar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "visualizo a página inicial",
+  "name": "a mensagem exibida Saiu com sucesso",
   "keyword": "Então "
 });
 formatter.match({
-  "location": "SiteBarriga.visualizoAPáginaInicial()"
+  "location": "Logando.aMensagemExibidaSaiuComSucesso()"
 });
 formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seleciono Contas",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoContas()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seleciono Adicionar",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoAdicionar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Não deve inserir uma conta sem nome",
-  "description": "",
-  "keyword": "Cenário"
-});
-formatter.step({
-  "name": "seleciono Salvar",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoSalvar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "sou notificado que o nome da conta é obrigatório",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "SiteBarriga.souNotificadoQueONomeDaContaÉObrigatório()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
-  "status": "passed"
-});
-formatter.background({
-  "name": "",
-  "description": "",
-  "keyword": "Contexto"
-});
-formatter.before({
-  "status": "passed"
-});
-formatter.step({
-  "name": "que estou acessando a aplicação",
-  "keyword": "Dado "
-});
-formatter.match({
-  "location": "SiteBarriga.queEstouAcessandoAAplicação()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "informo o usuário \"algumacoisa@gmail.com\"",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "SiteBarriga.informoOUsuário(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "a senha \"123456789\"",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.aSenha(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seleciono entrar",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoEntrar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "visualizo a página inicial",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "SiteBarriga.visualizoAPáginaInicial()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seleciono Contas",
-  "keyword": "Quando "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoContas()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seleciono Adicionar",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoAdicionar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.scenario({
-  "name": "Não deve inserir uma conta com nome já existente",
-  "description": "",
-  "keyword": "Cenário"
-});
-formatter.step({
-  "name": "informo a conta \"Conta de Teste\"",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.informoAConta(String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "seleciono Salvar",
-  "keyword": "E "
-});
-formatter.match({
-  "location": "SiteBarriga.selecionoSalvar()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "sou notificado que já existe uma conta com esse nome",
-  "keyword": "Então "
-});
-formatter.match({
-  "location": "SiteBarriga.souNotificadoQueJáExisteUmaContaComEsseNome()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.after({
   "status": "passed"
 });
 });

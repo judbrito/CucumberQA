@@ -7,13 +7,19 @@ import io.cucumber.junit.CucumberOptions;
 import io.cucumber.junit.CucumberOptions.SnippetType;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/Features/LocadoraFilmes.feature",
-glue = "steps",
-plugin = { "pretty", "html:target/reporthtml", "json:target/report.json"},
+@CucumberOptions(features = "src/test/resources/Features/logarSimples.feature",
+glue = "Steps.logoff",
+plugin = { "pretty",
+		"html:target/reporthtml",
+		"json:target/report.json" }, 
 snippets = SnippetType.CAMELCASE,
 monochrome = false,
 dryRun = false,
 strict = false)
-public class RunnerLocadoraTest {
+public class RunneLoginTest {
+	
 
-}
+   
+       
+    }
+
