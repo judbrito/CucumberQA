@@ -3,21 +3,43 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2023-03-24T19:29:41.163Z",
-        "line": 5,
+        "start_timestamp": "2023-03-28T20:05:15.595Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2029088901,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Logando.navegar()"
+            }
+          }
+        ],
+        "line": 12,
         "name": "login bem-sucedido com credenciais válidas",
         "description": "",
-        "id": "ação-de-login;login-bem-sucedido-com-credenciais-válidas",
+        "id": "ação-de-login;login-bem-sucedido-com-credenciais-válidas;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 282200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Logando.fecharPagina()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Cenário",
+        "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 5337874400,
+              "duration": 3601879799,
               "status": "passed"
             },
             "line": 6,
-            "name": "que o usuário navegue na pagina,",
+            "name": "que o usuário navegue na pagina",
             "match": {
               "location": "Logando.queOUsuárioNavegueNaPagina()"
             },
@@ -25,23 +47,33 @@
           },
           {
             "result": {
-              "duration": 2534786900,
+              "duration": 2362284600,
               "status": "passed"
             },
             "line": 7,
-            "name": "digite o login e senha",
+            "name": "digite o \"amazonclientevip@yahoo.com\" e \"123456789241307Jb@\"",
             "match": {
-              "location": "Logando.digiteOLoginESenha()"
+              "arguments": [
+                {
+                  "val": "\"amazonclientevip@yahoo.com\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"123456789241307Jb@\"",
+                  "offset": 40
+                }
+              ],
+              "location": "Logando.digiteOE(String,String)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 403650800,
+              "duration": 297553000,
               "status": "passed"
             },
             "line": 8,
-            "name": "seguida, a mensagem exibida Login com sucesso",
+            "name": "seguida a mensagem exibida Login com sucesso",
             "match": {
               "location": "Logando.seguidaAMensagemExibidaLoginComSucesso()"
             },
@@ -50,21 +82,43 @@
         ]
       },
       {
-        "start_timestamp": "2023-03-24T19:29:49.519Z",
-        "line": 10,
+        "start_timestamp": "2023-03-28T20:05:23.974Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1512611201,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Logando.navegar()"
+            }
+          }
+        ],
+        "line": 22,
         "name": "Logout bem-sucedido",
         "description": "",
-        "id": "ação-de-login;logout-bem-sucedido",
+        "id": "ação-de-login;logout-bem-sucedido;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 366130400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Logando.fecharPagina()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Cenário",
+        "keyword": "Esquema do Cenário",
         "steps": [
           {
             "result": {
-              "duration": 4676763400,
+              "duration": 2807926101,
               "status": "passed"
             },
-            "line": 11,
-            "name": "que o usuário navegue na pagina,",
+            "line": 16,
+            "name": "que o usuário navegue na pagina",
             "match": {
               "location": "Logando.queOUsuárioNavegueNaPagina()"
             },
@@ -72,22 +126,32 @@
           },
           {
             "result": {
-              "duration": 2440074800,
+              "duration": 2442183199,
               "status": "passed"
             },
-            "line": 12,
-            "name": "digite o login e senha",
+            "line": 17,
+            "name": "digite o \"amazonclientevip@yahoo.com\" e \"123456789241307Jb@\"",
             "match": {
-              "location": "Logando.digiteOLoginESenha()"
+              "arguments": [
+                {
+                  "val": "\"amazonclientevip@yahoo.com\"",
+                  "offset": 9
+                },
+                {
+                  "val": "\"123456789241307Jb@\"",
+                  "offset": 40
+                }
+              ],
+              "location": "Logando.digiteOE(String,String)"
             },
             "keyword": "Quando "
           },
           {
             "result": {
-              "duration": 4358168100,
+              "duration": 4588018199,
               "status": "passed"
             },
-            "line": 13,
+            "line": 18,
             "name": "clicar em sair",
             "match": {
               "location": "Logando.clicarEmSair()"
@@ -96,10 +160,10 @@
           },
           {
             "result": {
-              "duration": 2438300,
+              "duration": 2553401,
               "status": "passed"
             },
-            "line": 14,
+            "line": 19,
             "name": "a mensagem exibida Saiu com sucesso",
             "match": {
               "location": "Logando.aMensagemExibidaSaiuComSucesso()"
